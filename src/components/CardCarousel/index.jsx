@@ -20,7 +20,12 @@ export default function CardCarousel({
 
   async function getData() {
     try {
-      const response = await axios.get(url);
+      const response = await axios.get(url, {
+        params: {
+          query: 'Turismo en Buenos Aires',
+          page: 1,
+        },
+      });
       if (response) {
         setData(response.data);
       }

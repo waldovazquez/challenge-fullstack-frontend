@@ -14,7 +14,11 @@ export default function Home() {
 
   async function getData() {
     try {
-      const response = await axios.get('https://challenge-fullstack-waldo.herokuapp.com/api/carousel/second');
+      const response = await axios.get('https://challenge-fullstack-waldo.herokuapp.com/api/carousel/second', {
+        params: {
+          page: 1,
+        },
+      });
       if (response) {
         setMainCarouselData(response.data);
       }
