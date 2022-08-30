@@ -1,0 +1,29 @@
+.maincarousel__positions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.maincarousel__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.maincarousel__circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.slide--active {
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+}
+
+.slide--inactive {
+    background-color: #343A40;
+    border: 2px solid #CED4DA;
+}

@@ -1,0 +1,24 @@
+.secondarycarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.secondarycarousel__container__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.secondarycarousel__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1280px) {
+    .secondarycarousel__container__images {
+        flex-wrap: nowrap;
+    }
+}
